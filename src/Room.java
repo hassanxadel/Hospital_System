@@ -20,6 +20,7 @@ PreparedStatement pst=null;
      */
     public Room() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
         con= Connect.ConnectDB();
         Get_Data();
         setLocationRelativeTo(null);

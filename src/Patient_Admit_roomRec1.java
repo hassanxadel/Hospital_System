@@ -23,6 +23,7 @@ PreparedStatement pst=null;
      */
     public Patient_Admit_roomRec1() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
         con= Connect.ConnectDB();
         Get_Data();
         setLocationRelativeTo(null);

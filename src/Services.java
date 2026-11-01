@@ -31,6 +31,7 @@ PreparedStatement pst=null;
      */
     public Services() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
          setLocationRelativeTo(null);
          txtServiceID.setVisible(false);
          Get_Data1();

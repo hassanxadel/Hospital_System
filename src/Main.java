@@ -14,6 +14,7 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
     }
 
     /**

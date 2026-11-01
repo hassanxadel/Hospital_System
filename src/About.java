@@ -14,6 +14,7 @@ public class About extends javax.swing.JFrame {
      */
     public About() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
     }
 
     /**

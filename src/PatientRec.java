@@ -23,6 +23,7 @@ PreparedStatement pst=null;
      */
     public PatientRec() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
         con= Connect.ConnectDB();
         Get_Data();
     }

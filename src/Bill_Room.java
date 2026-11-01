@@ -31,6 +31,7 @@ public class Bill_Room extends javax.swing.JFrame {
      */
     public Bill_Room() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
         setLocationRelativeTo(null);
         Get_Data1();
     } /**

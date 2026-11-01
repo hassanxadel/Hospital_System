@@ -25,6 +25,7 @@ public class Bill_RoomRec extends javax.swing.JFrame {
      */
     public Bill_RoomRec() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
         con= Connect.ConnectDB();
         Get_Data();
         setLocationRelativeTo(null);

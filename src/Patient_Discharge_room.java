@@ -25,6 +25,7 @@ PreparedStatement pst=null;
      */
     public Patient_Discharge_room() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
         setLocationRelativeTo(null);
     }
     /**

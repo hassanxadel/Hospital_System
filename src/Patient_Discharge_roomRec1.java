@@ -24,6 +24,7 @@ public class Patient_Discharge_roomRec1 extends javax.swing.JFrame {
      */
     public Patient_Discharge_roomRec1() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
         con= Connect.ConnectDB();
         Get_Data();
         setLocationRelativeTo(null);

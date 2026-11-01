@@ -10,30 +10,30 @@ echo 💡 If database is not set up, run 'setup_database.bat' first!
 echo.
 pause
 
-REM Set JAVA_HOME (adjust path as needed)
-set JAVA_HOME=C:\Program Files\Java\jdk-8u301-windows-x64
-
-REM Add Java to PATH
-set PATH=%JAVA_HOME%\bin;%PATH%
-
 REM Navigate to project directory
 cd /d "%~dp0"
 
-REM Check if Java is available
+REM Check if Java is available on PATH
 java -version >nul 2>&1
 if errorlevel 1 (
     echo ERROR: Java is not installed or not in PATH
-    echo Please install Java JDK and set JAVA_HOME
+    echo Please install a JDK and add it to PATH
     pause
     exit /b 1
 )
 
 REM Compile the project (if needed)
 echo Compiling Java files...
-javac -cp "store\SCHEDULAR.jar;." src\*.java
+if not exist build\classes mkdir build\classes
+javac -encoding UTF-8 -cp "dist\lib\AbsoluteLayout.jar;lib\mysql-connector-j-8.0.33.jar" -d build\classes src\*.java
+if errorlevel 1 (
+    echo ERROR: Compilation failed.
+    pause
+    exit /b 1
+)
 
-REM Run the application
+REM Run the application (login screen is the real entry point)
 echo Starting Hospital Management System...
-java -cp "store\SCHEDULAR.jar;src" Entry
+java -cp "build\classes;dist\lib\AbsoluteLayout.jar;lib\mysql-connector-j-8.0.33.jar;src" login
 
 pause 

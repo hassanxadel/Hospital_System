@@ -27,6 +27,7 @@ PreparedStatement pst=null;
      */
     public Patient_Discharge_roomRec2() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
           con= Connect.ConnectDB();
         Get_Data();
         setLocationRelativeTo(null);

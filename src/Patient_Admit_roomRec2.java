@@ -13,6 +13,7 @@ public class Patient_Admit_roomRec2 extends javax.swing.JFrame {
    
     public Patient_Admit_roomRec2() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
         con= Connect.ConnectDB();
         Get_Data();
         setLocationRelativeTo(null);

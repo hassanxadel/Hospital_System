@@ -26,6 +26,7 @@ public class NewUser extends javax.swing.JFrame {
      */
     public NewUser() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
     }
     private void reset()
 {

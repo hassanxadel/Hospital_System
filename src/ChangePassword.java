@@ -27,6 +27,7 @@ PreparedStatement pst=null;
      */
     public ChangePassword() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
     }
 
     /**

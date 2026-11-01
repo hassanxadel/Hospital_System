@@ -26,6 +26,7 @@ public class Patient_Admit_Room extends javax.swing.JFrame {
      */
     public Patient_Admit_Room() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
         setLocationRelativeTo(null);
         fillcombo();
         cmbRoomNo.setSelectedIndex(-1);

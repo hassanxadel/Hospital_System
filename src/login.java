@@ -23,6 +23,12 @@ public class login extends javax.swing.JFrame {
      */
     public login() {
         initComponents();
+        setTitle("Hospital Management System - Login");
+        getContentPane().setBackground(UITheme.BG);
+        jLabel1.setForeground(UITheme.TEXT);
+        jLabel2.setForeground(UITheme.TEXT);
+        jButton1.setBackground(UITheme.PRIMARY);
+        jButton1.setForeground(java.awt.Color.WHITE);
     }
 
     /**
@@ -40,10 +46,10 @@ public class login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jPassword = new javax.swing.JPasswordField();
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel1.setFont(UITheme.LABEL_FONT);
         jLabel1.setText("Username");
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel2.setFont(UITheme.LABEL_FONT);
         jLabel2.setText("Password");
 
         jButton1.setText("OK");
@@ -132,22 +138,7 @@ public class login extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Metal".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
+        UITheme.apply();
         //</editor-fold>
 
         /* Create and display the form */

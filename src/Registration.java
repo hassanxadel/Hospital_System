@@ -25,6 +25,7 @@ PreparedStatement pst=null;
      */
     public Registration() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
     }
 private void Reset()
 {

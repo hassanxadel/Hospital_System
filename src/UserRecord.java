@@ -24,6 +24,7 @@ public class UserRecord extends javax.swing.JFrame {
      */
     public UserRecord() {
         initComponents();
+        getContentPane().setBackground(UITheme.BG);
         con = Connect.ConnectDB();
         Get_Data();
 
