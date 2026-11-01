@@ -1,5 +1,7 @@
 # Hospital Management System - Comprehensive Analysis Report
 
+> **Note:** This is a point-in-time code/security review of the existing Swing+MySQL codebase, used to track known issues (see sections 2-5). The rewrite proposal in sections 6-10 (layered architecture, JavaFX, Spring Boot) was **not implemented** — the actual restore kept the original Swing architecture intact. See [`RESTORE_NOTES.md`](RESTORE_NOTES.md) for what was actually changed.
+
 ## Executive Summary
 
 This report presents a detailed analysis of the Hospital Management System, a Java Swing-based desktop application with MySQL database integration. The system manages patient registration, doctor information, room management, patient admission/discharge, billing, and user authentication.
