@@ -1,0 +1,5 @@
+.vs/
+build/
+dist/*.jar
+*.class
+db.properties
